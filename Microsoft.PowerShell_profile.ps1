@@ -8,6 +8,7 @@ Invoke-Expression (& { (zoxide init powershell | Out-String) })
 fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression
 
 # A PowerShell wrapper around the fuzzy finder fzf
+# Requires => "Install-Module -Name PSFzf -Scope CurrentUser"
 # ALT + C => fuzzy search folders
 # CONTROL + R => fuzzy search history
 # CONTROL + T => fuzzy search everything
